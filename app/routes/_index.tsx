@@ -16,26 +16,41 @@ export default function Index() {
             <ul className="mx-auto max-w-2xl divide-y divide-gray-100 rounded-md border border-gray-200 bg-white">
               <li>
                 <p
-                  className="mt-3 text-lg h-10 leading-8 text-teal-400"
-                  >
+                  className="font-semibold mt-3 text-lg h-10 leading-8 text-teal-400"
+                >
                   Team Status
                 </p>
               </li>
               <li className="text-left">
                 <p
-                  className=" ml-3 mt-3 text-lg h-10 leading-8 text-teal-400"
+                  className=" ml-3 mt-3 text-lg h-10 leading-8 text-teal-900"
                 >
                   Olivia Feller
+                  <a
+										className="rounded-md text-sm bg-teal-400 m-6 p-2 font-medium text-teal-900 hover:text-teal-800"
+									>
+										focused
+									</a>
                 </p>
                 <p
-                  className=" ml-3 mt-3 text-lg h-10 leading-8 text-teal-400"
+                  className=" ml-3 mt-3 text-lg h-10 leading-8 text-teal-900"
                 >
-                  Olivia Feller
+                  Neyaa Rajan
+                  <a
+										className="rounded-md text-sm bg-teal-400 m-6 p-2 font-medium text-teal-900 hover:text-teal-800"
+									>
+										relaxed
+									</a>
                 </p>
                 <p
-                  className=" ml-3 mt-3 text-lg h-10 leading-8 text-teal-400"
+                  className=" ml-3 mt-3 text-lg h-10 leading-8 text-teal-900"
                 >
-                  Olivia Feller
+                  Angela Ung
+									<a
+										className="rounded-md text-sm bg-teal-400 m-6 p-2 font-medium text-teal-900 hover:text-teal-800"
+									>
+										confused
+									</a>
                 </p>
               </li>
             </ul>
