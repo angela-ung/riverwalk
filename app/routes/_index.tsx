@@ -11,23 +11,23 @@ export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
       <h1 className="text-3xl font-bold">
-        48 Hours Project: Spirit
+        Dashboard View
       </h1>
       <ul>
         <li>
           <a
             target="_blank"
-            href="/manager"
+            href="/status"
           >
-            Manager View
+            Status View
           </a>
         </li>
         <li>
           <a
             target="_blank"
-            href="/employee"
+            href="/analysis"
           >
-            Employee View
+            Analysis View
           </a>
         </li>
       </ul>
