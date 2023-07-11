@@ -22,36 +22,37 @@ export default function Index() {
                 </p>
               </li>
               <li className="text-left">
-                <p
-                  className=" ml-3 mt-3 text-lg h-10 leading-8 text-teal-900"
-                >
+                <div className=" ml-5 mt-3 text-lg h-10 leading-8 text-teal-900">
+                  John Doe (Me)
+                  <a className="rounded-md text-sm bg-teal-400 m-6 p-2 font-medium text-teal-900 hover:text-teal-800">
+										excited
+									</a>
+                  <a className="ml-60 flex-shrink-0 text-right text-sm m-6 p-6 font-medium text-teal-900 hover:text-teal-800"
+                    href="/status">
+                      Change Status
+                  </a>
+                </div>
+
+                <div className=" ml-5 mt-3 text-lg h-10 leading-8 text-teal-900">
                   Olivia Feller
-                  <a
-										className="rounded-md text-sm bg-teal-400 m-6 p-2 font-medium text-teal-900 hover:text-teal-800"
-									>
+                  <a className="rounded-md text-sm bg-teal-400 m-6 p-2 font-medium text-teal-900 hover:text-teal-800">
 										focused
 									</a>
-                </p>
-                <p
-                  className=" ml-3 mt-3 text-lg h-10 leading-8 text-teal-900"
-                >
+                </div>
+
+                <div className=" ml-5 mt-3 text-lg h-10 leading-8 text-teal-900">
                   Neyaa Rajan
-                  <a
-										className="rounded-md text-sm bg-teal-400 m-6 p-2 font-medium text-teal-900 hover:text-teal-800"
-									>
+                  <a className="rounded-md text-sm bg-teal-400 m-6 p-2 font-medium text-teal-900 hover:text-teal-800">
 										relaxed
 									</a>
-                </p>
-                <p
-                  className=" ml-3 mt-3 text-lg h-10 leading-8 text-teal-900"
-                >
+                </div> 
+
+                <div className=" ml-5 mt-3 text-lg h-10 leading-8 text-teal-900">
                   Angela Ung
-									<a
-										className="rounded-md text-sm bg-teal-400 m-6 p-2 font-medium text-teal-900 hover:text-teal-800"
-									>
+									<a className="rounded-md text-sm bg-teal-400 m-6 p-2 font-medium text-teal-900 hover:text-teal-800">
 										confused
 									</a>
-                </p>
+                </div>
               </li>
             </ul>
 		</div>
