@@ -1,8 +1,8 @@
-export default function Index() {
+export default function StatusIndex() {
     return (
       <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
         <h1 className="text-3xl font-bold">
-          Employee View
+          Status Popup
         </h1>
       </div>
     );
