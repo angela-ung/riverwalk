@@ -40,8 +40,14 @@ export default function StatusIndex() {
               <form method="post" action="/status">
                 <select name="emotion" className="pl-4 mx-auto w-64 max-w-2xl py-4 divide-y divide-gray-100 rounded-md border border-gray-200 bg-white">
                     <option value="neutral">Neutral</option>
+                    <option value="annoyed">Annoyed</option>
+                    <option value="confused">Confused</option>
                     <option value="excited">Excited</option>
+                    <option value="focused">Focused</option>
+                    <option value="inspired">Inspired</option>
                     <option value="motivated">Motivated</option>
+                    <option value="relaxed">Relaxed</option>
+                    <option value="sociable">Sociable</option>
                     <option value="tired">Tired</option>
                   </select>
                   <div className="m-4">
