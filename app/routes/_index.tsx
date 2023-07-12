@@ -1,6 +1,5 @@
 import type { V2_MetaFunction } from "@remix-run/node";
 import React from 'react';
-import 'devextreme/dist/css/dx.light.css';
 
 export const meta: V2_MetaFunction = () => {
   return [
