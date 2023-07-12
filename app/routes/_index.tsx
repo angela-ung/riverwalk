@@ -3,7 +3,7 @@ import { useLoaderData } from "@remix-run/react";
 import React from 'react';
 const {createRequestHandler} = require("@remix-run/express");
 
-var currEmo = "Neutral"
+var currEmo = "neutral"
 
 export async function getEmotion(emotion: string) {
   currEmo = emotion;
@@ -43,7 +43,7 @@ export default function Index() {
                   <a className="rounded-md text-sm bg-teal-400 m-6 p-2 font-medium text-teal-900 hover:text-teal-800">
 										{curremotion}
 									</a>
-                  <a className="ml-60 flex-shrink-0 text-right text-sm m-6 p-6 font-medium text-teal-900 hover:text-teal-800"
+                  <a className="ml-56 flex-shrink-0 text-right text-sm m-6 p-6 font-medium text-teal-900 hover:text-teal-800"
                     href="/status">
                       Change Status
                   </a>
