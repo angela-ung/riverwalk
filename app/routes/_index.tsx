@@ -1,5 +1,14 @@
-import type { V2_MetaFunction } from "@remix-run/node";
+import { ActionArgs, redirect, type V2_MetaFunction } from "@remix-run/node";
+import { useLoaderData } from "@remix-run/react";
 import React from 'react';
+const {createRequestHandler} = require("@remix-run/express");
+
+var currEmo = "Neutral"
+
+export async function getEmotion(emotion: string) {
+  currEmo = emotion;
+  return redirect(`/`)
+}
 
 export const meta: V2_MetaFunction = () => {
   return [
@@ -8,7 +17,13 @@ export const meta: V2_MetaFunction = () => {
   ];
 };
 
+export const loader = async () => {
+  return currEmo
+}
+
 export default function Index() {
+  const curremotion = useLoaderData<typeof loader>();
+  
   return (
 		<div className="lg:text-center py-16 bg-gray-100">
 						<h2 className="text-base mt-2 mb-6 text-3xl sm:text-4xl font-bold tracking-tight leading-7 text-teal-900">
@@ -26,7 +41,7 @@ export default function Index() {
                 <div className=" ml-5 mt-3 text-lg h-10 leading-8 text-teal-900">
                   John Doe (Me)
                   <a className="rounded-md text-sm bg-teal-400 m-6 p-2 font-medium text-teal-900 hover:text-teal-800">
-										excited
+										{curremotion}
 									</a>
                   <a className="ml-60 flex-shrink-0 text-right text-sm m-6 p-6 font-medium text-teal-900 hover:text-teal-800"
                     href="/status">
@@ -65,3 +80,7 @@ export default function Index() {
 		</div>
   );
 }
+function createProject(body: any) {
+  throw new Error("Function not implemented.");
+}
+
