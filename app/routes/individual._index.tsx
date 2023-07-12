@@ -9,7 +9,8 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js/auto';
-import { Line } from 'react-chartjs-2';
+//import { Line } from 'react-chartjs-2';
+import { Pie } from 'react-chartjs-2';
 import { faker } from '@faker-js/faker';
 import { ClientOnly } from 'remix-utils';
 import { useLoaderData } from '@remix-run/react/dist/components';
@@ -30,11 +31,10 @@ export const meta: V2_MetaFunction = () => {
 };
 export async function loader() {
   const labels = [
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
+    'Confused',
+    'Tired',
+    'Focused',
+    'Relaxed'
   ];
   const options = {
     responsive: true,
@@ -44,7 +44,7 @@ export async function loader() {
       },
       title: {
         display: true,
-        text: 'Team Moods: Week of 7/10/23',
+        text: 'Moods: Week of 7/10/23',
       },
     },
   };
@@ -53,21 +53,15 @@ export async function loader() {
     datasets: [
       {
         label: 'Focused',
-        data: labels.map(() => faker.number.int({ min: 0, max: 8 })),
-        borderColor: 'rgb(255, 99, 132)',
-        backgroundColor: 'rgba(255, 99, 132, 0.5)',
-      },
-      {
-        label: 'Tired',
-        data: labels.map(() => faker.number.int({ min: 0, max: 8 })),
-        borderColor: 'rgb(17, 158, 26)',
-        backgroundColor: 'rgba(84, 212, 92, 0.5)',
-      },
-      {
-        label: 'Relaxed',
-        data: labels.map(() => faker.number.int({ min: 0, max: 8 })),
-        borderColor: 'rgb(53, 162, 235)',
-        backgroundColor: 'rgba(53, 162, 235, 0.5)',
+        data: labels.map(() => faker.number.int({ min: 0, max: 3 })),
+        borderColor: ['#FF7079',
+        '#FFC096',
+        '#67EACC',
+        '#8395EA'],
+        backgroundColor: ['rgb(255, 154, 162)',
+        'rgb(255, 218, 193)',
+        'rgb(181, 234, 215)',
+        'rgb(199, 206, 234)']
       },
     ],
   };
@@ -83,7 +77,7 @@ export default function AnalysisIndex() {
       <ul className="mx-auto max-w-2xl py-4 rounded-md border border-gray-200 bg-white">
         <div className="p-8">
           <ClientOnly fallback={<Fallback />}>
-            {() => <Line options={options} data={data} />}
+            {() => <Pie options={options} data={data} />}
           </ClientOnly>
         </div>
         <div className="text-right">
@@ -99,3 +93,7 @@ export default function AnalysisIndex() {
 function Fallback() {
   return <div>Generating Chart</div>;
 }
+
+
+
+
