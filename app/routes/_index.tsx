@@ -9,7 +9,7 @@ export async function getEmotion(emotion: string) {
 }
 export const meta: V2_MetaFunction = () => {
   return [
-    { title: "48 Hours Project" },
+    { title: "Dashboard" },
     { name: "description", content: "Made by Angela Ung, Neyaa " },
   ];
 };

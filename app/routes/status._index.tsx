@@ -6,7 +6,7 @@ import { badRequest } from '~/utils/request.server'
 
 export const meta: V2_MetaFunction = () => {
   return [
-    { title: "48 Hours Project" },
+    { title: "Change Status" },
     { name: "description", content: "Made by Angela Ung, Neyaa " },
   ];
 };
