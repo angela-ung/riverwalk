@@ -24,7 +24,7 @@ ChartJS.register(
 );
 export const meta: V2_MetaFunction = () => {
   return [
-    { title: 'New Remix App' },
+    { title: '48 Hours' },
     { name: 'description', content: 'Welcome to Remix!' },
   ];
 };
