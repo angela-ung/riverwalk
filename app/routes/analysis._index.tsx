@@ -47,6 +47,22 @@ export async function loader() {
         text: 'Team Moods: Week of 7/10/23',
       },
     },
+    scales: {
+      y: {
+        display: true,
+        title: {
+          display: true,
+          text: 'Number of People',
+        },
+      },
+      x: {
+        display: true,
+        title: {
+          display: true,
+          text: 'Day of the Week',
+        },
+      },
+    },
   };
   const data = {
     labels,
