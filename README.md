@@ -1,7 +1,7 @@
 # Welcome to our 48 Hours Project!
 
 Made by:
-Angela Ung, Neyaa Raja, and Olivia Feller
+Angela Ung, Neyaa Rajan, and Olivia Feller
 
 ## How to launch
 
